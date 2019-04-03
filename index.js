@@ -34,7 +34,9 @@ app.engine('html', es6Renderer);
 app.set('view engine', 'html');
 app.set('views', 'views');
 
+// controller function
 app.get('/movies', (req, res) => {
+    // should render a template
     console.log('you are inside /movies')
     // res.send('welcome to the movies section');
     res.render('movies') // renders the movies.html file in the views folder
